@@ -17,11 +17,11 @@ echo $cursoact[0]['idpersona'];
 
 
 
-<form name="form1" method="post" action="home.php?acceso=106">
+<form name="form1" method="post" action="home.php?acceso=106" >
 
-<table border="1" width = "600" align="center">
+<table width = "600" align="center" cellpadding="6">
 <tr>
-<td colspan = "4" align = "center">EDITAR CURSO<input type="hidden" value="actua" name="actua" /><input type="hidden" name="codigo" value="<?php echo $cursoact[0]['idcurso']; ?>" /></td>
+<th colspan = "4" align = "center" ><h2>EDITAR CURSO</h2><input type="hidden" value="actua" name="actua" /><input type="hidden" name="codigo" value="<?php echo $cursoact[0]['idcurso']; ?>" /></th>
 </tr>
 
 <tr>
@@ -30,7 +30,7 @@ echo $cursoact[0]['idpersona'];
 <td>
 
 
-<input type= "text" name = "nombre" value="<?php echo $cursoact[0]['nombre']; ?>" maxlength='50'/>
+<input type= "text" name = "nombre" value="<?php echo $cursoact[0]['nombre']; ?>" maxlength='50' size="27"/>
 
 
 
@@ -38,8 +38,8 @@ echo $cursoact[0]['idpersona'];
 
 
 
-<td align = "center">Nivel:</td>
-<td>
+<td align = "center" rowspan="2">Nivel:
+
 
 <select name = "idnivel">
 
@@ -114,44 +114,11 @@ for($d=0; $d<count($selper);$d++){
 <br>
 
 <br>
-<form name ="form2" method = "GET" action = "" onSubmit="return confirm('Desea eliminar el curso?')">
-
-<table border = "1" width = "700" align="center">
-<tr>
-
-<th>IDCURSO</th>
-<th>EDITAR</th>
-<th>CURSO</th>
-<th>PROFESOR</th>
-<th>INFORMACION</th>
-
-</tr>
-
-<?php
-for($a=0;$a<count($sele);$a++){
-
-?>
-<tr>
-
-<td align = "center"><?php echo $sele[$a]["idcurso"]?></td>
-<td align = "center"><a href="home.php?edit=<?php echo $sele[$a]["idcurso"]?>&acceso=106"><img border = 0 src="image/editar.png"width = "20" height = "20" /></a></td>
-<td align = "center"><?php echo $sele[$a]["nombre"]?></td>
-<td align = "center"><?php  echo $sele[$a]["prinombre"]." ".$sele[$a]["priapellido"]?></td>
-<td align = "center"><a href="home.php?acceso=108&revi=<?php echo $sele[$a]["idcurso"]?>"><img src="image/rubik.png" width = "20" height = "20"></td>
-
-
-</tr>
-
-<?php } ?>
-
-
-<tr>
-    <td colspan="6">Para eliminar, presione el n&uacute;mero del c&oacute;digo.</td>
-</tr>
 
 
 
-</table>
-</form>
+
+
+
 
 

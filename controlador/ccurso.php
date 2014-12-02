@@ -16,6 +16,13 @@ $codigo = isset($_POST["codigo"]) ? $_POST["codigo"] : NULL;
 $revi = isset($_GET["revi"]) ? $_GET["revi"] : NULL;
 
 
+//Nombre de curso para lista//
+$nombrecurslist = isset($_GET["nombrecurslist"]) ? $_GET["nombrecurslist"]:NULL;
+// //
+
+
+
+
 //echo $selecal;
 
 if ($nombre && $idnivel && $idpersona && !$actua) {

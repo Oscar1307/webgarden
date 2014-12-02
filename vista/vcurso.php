@@ -9,11 +9,11 @@ include("controlador/ccurso.php");
 
 
 
-<form name="form1" method="post" action="">
+<form name="form1" method="post" action="" >
 
-<table border="1" width = "600" align="center">
+<table  width = "600" align="center" cellpadding="6">
 <tr>
-<td colspan = "4" align = "center">CURSO</td>
+<th colspan = "4" align = "center" ><h2>CURSO</h2></th>
 </tr>
 
 <tr>
@@ -22,7 +22,7 @@ include("controlador/ccurso.php");
 <td>
 
 
-<input type= 'text' name = 'nombre' maxlength='50'/>
+<input type= 'text' name = 'nombre' maxlength='50' size="27"/>
 
 
 
@@ -30,8 +30,8 @@ include("controlador/ccurso.php");
 
 
 
-<td align = "center">Nivel:</td>
-<td>
+<td align = "center" rowspan="2">Nivel:
+
 
 <select name = "idnivel">
 
@@ -101,6 +101,7 @@ for($d=0; $d<count($selper);$d++){
 
 </table>
 
+
 </form>
 
 
@@ -109,21 +110,42 @@ for($d=0; $d<count($selper);$d++){
 <br>
 
 <br>
-<form name ="form2" method = "GET" action = "" onSubmit="return confirm('Desea eliminar el curso?')">
 
-<table border = "1" width = "700" align="center">
-<tr>
 
-<th>IDCURSO</th>
-<th>EDITAR</th>
-<th>NOMBRE</th>
-<th>NIVEL</th>
-<th>PROFESOR</th>
-<th>REVISAR <br> ACTIVIDADES</th>
 
-</tr>
 
-<?php
+
+
+
+
+
+
+
+
+<center>
+ 
+<form id="form2" name="form2" method="GET" action="" class="display" onSubmit="return confirm('Desea eliminar?')">
+
+    <div align="center" id="tabint">
+        
+        <div style="width: 700px">
+        <table id="example" class="display" cellspacing="0" width="100%">
+             <thead>
+            <tr>
+                
+
+                <th>Idcurso</th>
+                <th>Editar</th>
+                <th>Nombre</th>
+                <th>Nivel</th>
+                <th>Profesor</th>
+                <th>Revisar</th>
+               
+             
+            </tr>
+             </thead>
+       <tbody>
+        <?php
 for($a=0;$a<count($sele);$a++){
 
 ?>
@@ -135,7 +157,7 @@ for($a=0;$a<count($sele);$a++){
 <td align = "center"><?php echo $sele[$a]["niv"]?></td>
 
 <td align = "center"><?php echo $sele[$a]["prinombre"]." ".$sele[$a]["priapellido"] ?></td>
-<td align = "center"><a href="home.php?acceso=108&revi=<?php echo $sele[$a]["idcurso"]?>"><img src="image/rubik.png" width = "20" height = "20"></td>
+<td align = "center"><a href="home.php?acceso=108&revi=<?php echo $sele[$a]["idcurso"]?>&nombrecurslist=<?php echo $sele[$a]["nombre"]?>"><img src="image/rubik.png" width = "20" height = "20"></td>
 
 
 <a href ="home.php?acceso=108&curso=<?php echo $sele[$a]["idcurso"]?>&config=3"></a>
@@ -144,19 +166,22 @@ for($a=0;$a<count($sele);$a++){
 
 
 <?php } ?>
-<tr>
-    <td colspan="6">Para eliminar, presione el n&uacute;mero del c&oacute;digo.<input type="hidden" name="acceso" value="106"></td>
-</tr>
-
-</table>
+   </tbody>
+            <tr>
+                <td colspan=17 class="style2">Para eliminar, presione el n&uacute;mero del c&oacute;digo.</td>
+            </tr>
+        </table>
+        <p>&nbsp; </p>
+    </div>
+        </div>
 </form>
-
-<!--<td align = "center"><a href="vcurso.php?selecal=<?php echo $sele[$a]["idcurso"]?>" onClick="javascript:desliventana();"><img border = 0 src="../image/lupa.png"width = "16" height = "16" /></a></td>-->
-
-
-
-
-
+    <script>
+       $(document).ready(function() {
+            $("#example").DataTable();
+        } );
+    </script>
+</center>
+        
 
 
 

@@ -2,12 +2,15 @@
 include("controlador/cpersona.php");
 ?>
 
-<form name="form1" method="get" action="">   
+<form name="form1" method="get" action="" id="form2">   
     <br>
     <br>
     <br>
     <label><h1>SELECCIONE CARGOS</h1></label>
-    <table border="1" align="center" width="500">
+	
+	<div align="center" id="tabint">
+	
+    <table border="1" align="center" width="500" cellspacing="0">
 
       
         
@@ -97,6 +100,7 @@ include("controlador/cpersona.php");
         
         </tr>
     </table>
+	</div>
 </form>
 
 
