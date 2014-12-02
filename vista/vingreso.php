@@ -20,14 +20,14 @@
          
             <tr>
                 <td><div align="left" style="color:black">No.Documento:</div></td>
-                <td><div align="center">
+                <td><div align="left">
                         <input name="username" type="text" id="CampoTxt" maxlength="30" size="21" required/>
                     </div></td>
             </tr>
             <tr>
                 <td><div align="left" style="color:black">Contrase&ntilde;a:</div></td>
                 <td>
-                    <div align="center">
+                    <div align="left">
                         <input name="password" type="password" id="CampoTxt" maxlength="30" size="21" required/>
                     </div>
                 </td>
@@ -38,7 +38,7 @@
                 <td><div align="left" style="color:black">Perfil:</div></td>
 
                 <td>
-                    <div align="center">
+                    <div align="left">
                         <select name="perfil" required >
                         <option value   </option>seleccione
 

@@ -37,17 +37,20 @@
                                 <ul>
 
                                     <li class="green">
-                                        <a href="#"><IMG SRC="image/edit.png" height="15" width="18"></a>
+                                        <a href="#"><IMG SRC="image/edit.png" align="bottom" height="15" width="18"></a>
 
                                         <ul>
                                             <li><a href="home.php?acceso=130">Cambiar datos personales</a></li>
                                             <li><a href="home.php?acceso=133">Cambiar contrase&ntilde;a</a></li>
                                         </ul>
+                                    <li>
+                                      <li class="green">
+                                        <a <?php if($idper=='1'){ ?>  href="documentos/Manualdeacudiente.pdf" <?php  } if($idper=='3'){ ?>  href="documentos/Manualparadocente.pdf" <?php }if($idper=='4'){ ?>  href="documentos/Manualparaconductor.pdf" <?php } if($idper=='5'){ ?>  href="documentos/Manualdeadministrador.pdf" <?php }  ?> target="_blank"><IMG SRC="image/ayuda.jpeg" height="15" width="18" title="Ayuda"></a>
                                     </li>
-                                    
                                     <li class="green">
                                         <a href="vista/salir.php" ><IMG SRC="image/salir.png" height="15" width="18" title="Cerrar Sesion"></a>
                                     </li>
+                                   
                                 </ul>
 
 
