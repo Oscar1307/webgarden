@@ -19,7 +19,7 @@ $idusuario = isset($_SESSION["idUser"]) ? $_SESSION["idUser"]:NULL;
         $volver = isset($_POST["volver"]) ? $_POST["volver"]:NULL;
         
 	
-        if($tipdocu && $codusu && $prinomb && $segnomb && $priapellido && $segapellido && $genero && $direcc && $telef && $email && !$volver){
+        if($tipdocu && $codusu && $prinomb && $priapellido && $genero && $direcc && $telef && $email && !$volver){
             ?>
 <script>
     

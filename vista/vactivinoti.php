@@ -21,7 +21,7 @@ include("controlador/ccurso.php");
         <label><h3><?php echo $actividad[0]['nombre']; ?></h3></label>
         <tr>
             <th>Nombre</th>
-            <th>Descripcion</th>
+            <th>Descripci&oacute;n</th>
             <th>Encargado</th> 
         </tr>
         <?php for($a=0;$a<count($actividad);$a++){?>

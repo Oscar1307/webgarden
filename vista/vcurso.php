@@ -109,7 +109,7 @@ for($d=0; $d<count($selper);$d++){
 <br>
 
 <br>
-<form name ="form2" method = "GET" action = "" onSubmit="return confirm('Desea eliminar?')">
+<form name ="form2" method = "GET" action = "" onSubmit="return confirm('Desea eliminar el curso?')">
 
 <table border = "1" width = "700" align="center">
 <tr>
@@ -145,7 +145,7 @@ for($a=0;$a<count($sele);$a++){
 
 <?php } ?>
 <tr>
-<td colspan="6">Para eliminar, presione el numero del codigo.<input type="hidden" name="acceso" value="106"></td>
+    <td colspan="6">Para eliminar, presione el n&uacute;mero del c&oacute;digo.<input type="hidden" name="acceso" value="106"></td>
 </tr>
 
 </table>
