@@ -20,13 +20,13 @@ include ("controlador/cpersona.php");
             <tr>
                 <th >No.documento<input name="acceso" type="hidden" id="acceso" value="109" /></th>
 
-                <th>Foto</th>
-                <th>Nombre</th>
-                <th>Tel&eacute;fono</th>
-                <th>Direcci&oacute;n</th>
-                <th>E-mail</th> 
-                <th>Gestionar perfiles</th>
-                <th>Editar</th>
+                <th align="center">Foto</th>
+                <th align="center">Nombre</th>
+                <th align="center">Tel&eacute;fono</th>
+                <th align="center">Direcci&oacute;n</th>
+                <th align="center">E-mail</th> 
+                <th align="center">Gestionar perfiles</th>
+                <th align="center">Editar</th>
              
             </tr>
              </thead>
@@ -48,7 +48,7 @@ include ("controlador/cpersona.php");
                     <td align="center"> <?php echo $persona[$i]['telefono'] ?></td>
                     <td align="center"> <?php echo $persona[$i]['direccion'] ?></td>
                     <td align="center" > <?php echo $persona[$i]['email'] ?></td>
-                    <td align="center"><a href="home.php?acceso=135&cedula=<?php echo $persona[$i]['identificacion'] ?>"><img src="image/maletin.png" width="22" height="22" title="Gestionar perfiles" align="right"></a></td>
+                    <td align="center"><a href="home.php?acceso=135&cedula=<?php echo $persona[$i]['identificacion'] ?>"><img src="image/maletin.png" width="22" height="22" title="Gestionar perfiles" align="center"></a></td>
                             
 
 

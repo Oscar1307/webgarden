@@ -74,7 +74,7 @@ class mpersona {
 
   
     function updpersona($tipdocu, $prinomb, $segnomb, $priapellido, $segapellido, $genero, $direcc, $telef, $email, $codi) {
-        $sql = "UPDATE persona SET prinombre='" . $prinomb . "', segnombre='" . $segnomb . "', priapellido='" . $priapellido . "', segapellido ='" . $segapellido . "', telefono ='" . telef . "', direccion = '" . $direcc . "', genero = '" . $genero . "', email = '" . $email . "', tipodoc = '" . $tipdocu . "' WHERE
+        $sql = "UPDATE persona SET prinombre='" . $prinomb . "', segnombre='" . $segnomb . "', priapellido='" . $priapellido . "', segapellido ='" . $segapellido . "', telefono ='" . $telef . "', direccion = '" . $direcc . "', genero = '" . $genero . "', email = '" . $email . "', tipodoc = '" . $tipdocu . "' WHERE
 		      identificacion = '" . $codi . "';";
         $this->cons($sql);
     }

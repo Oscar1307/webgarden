@@ -47,10 +47,10 @@ include("controlador/ccurso.php");
     <div align="center" id="tabint">
         <table width="700" border="0" cellspacing="0" cellpadding="5">
             <tr>
-                <td colspan="6" align="center">
+                <th colspan="6" align="center">
                     <h2>Actividades extracurriculares</h2>
                     <label><h3><?php echo $actividad[0]['nombre']; ?></h3></label>
-                </td>
+                </th>
 
             </tr> 
             
@@ -66,9 +66,9 @@ include("controlador/ccurso.php");
             <tr>
                 
 
-                <th>Nombre</th>
-                <th>Descripci&oacute;n</th>
-                <th>Encargado</th>
+                <th align="center">Nombre</th>
+                <th align="center">Descripci&oacute;n</th>
+                <th align="center">Encargado</th>
                
              
             </tr>
@@ -76,11 +76,11 @@ include("controlador/ccurso.php");
        <tbody>
          <?php for($a=0;$a<count($actividad);$a++){?>
         <tr>
-            <td><?php echo $actividad[$a]['activi']; ?></td>
+            <td align="center"><?php echo $actividad[$a]['activi']; ?></td>
             
-            <td><?php echo $actividad[$a]['descripcion']; ?></td>
+            <td align="center"><?php echo $actividad[$a]['descripcion']; ?></td>
             
-            <td><?php echo $actividad[$a]['prinombre']." ".$actividad[$a]['priapellido']; ?></td>
+            <td align="center"><?php echo $actividad[$a]['prinombre']." ".$actividad[$a]['priapellido']; ?></td>
         </tr>
         <?php } ?>
    </tbody>
