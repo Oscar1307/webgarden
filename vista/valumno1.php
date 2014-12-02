@@ -62,16 +62,16 @@ include ("controlador/calumno.php");
             <tr>  
 
 
-                <td colspan="1" align="left">Primer Nombre<br> <input type="text"  name="prinombre" size="35" maxlength="15" required="required" value="<?php echo $datosalumno[0]['prinombre'] ?>" /></td>
-                <td colspan="1" align="left">Segundo Nombre (No requerido)<br> <input type="text" name="segnombre" size="35" maxlength="20" value="<?php echo $datosalumno[0]['segnombre'] ?>"   /></td>
+                <td colspan="1" align="left">Primer Nombre<br> <input type="text"  name="prinombre" size="35" maxlength="15" required="required" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" value="<?php echo $datosalumno[0]['prinombre'] ?>" /></td>
+                <td colspan="1" align="left">Segundo Nombre (No requerido)<br> <input type="text" name="segnombre" size="35" maxlength="20" pattern="[A-Za-z]{1,20}" Title="Este campo solo admite letras" value="<?php echo $datosalumno[0]['segnombre'] ?>"   /></td>
                  <input type="hidden" name="actu" value="actu"/>
                  <input type="hidden" name="idalumno" value="<?php echo $datosalumno[0]['identificacion']?>"/>
             </tr>
             <tr>  
 
 
-                <td colspan="1" align="left">Primer Apellido<br> <input type="text"  name="priape" size="35" maxlength="15" required="required" value="<?php echo $datosalumno[0]['priapellido'] ?>"/></td>
-                <td colspan="1" align="left">Segundo Apellido (No requerido)<br><input type="text"  name="segape" size="35" maxlength="20" value="<?php echo $datosalumno[0]['segapellido'] ?>" /></td>
+                <td colspan="1" align="left">Primer Apellido<br> <input type="text"  name="priape" size="35" maxlength="15" required="required" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" value="<?php echo $datosalumno[0]['priapellido'] ?>"/></td>
+                <td colspan="1" align="left">Segundo Apellido (No requerido)<br><input type="text"  name="segape" size="35" maxlength="20" pattern="[A-Za-z]{1,20}" Title="Este campo solo admite letras" value="<?php echo $datosalumno[0]['segapellido'] ?>" /></td>
             </tr>
             <tr>  
 
