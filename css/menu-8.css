@@ -1,0 +1,75 @@
+
+
+#principal {width: 175px;
+color: #000;
+background-color: #1F7DFF;
+ border-radius: 8px;
+/*padding: 8px;
+*/position: relative;
+/*margin: 20px;*/
+font-size: 1.5em;
+text-align: center;
+cursor: pointer;
+}
+#principal:hover {background-color: #1F7DFF;}
+
+#principal:hover #menu66 {display: block;
+}
+
+#menu66 {  text-align: center;
+/*font-size: 0.85em;
+width: 320px;*/
+display: none;
+/*position: relative;
+padding-top: 10px;
+left: -9px;
+margin-bottom: -10px;*/
+}
+
+
+#menu66 ul { list-style-type: none;border: 0;
+}
+#menu66 ul li.nivel1 { 
+width: 162px;
+}
+#menu66 ul li.primera { border-top: solid 1px #FFF;
+}
+#menu66 ul li a {display: block;
+text-decoration: none;
+color: #fff;
+background-color: #2360B2;
+ border-radius: 8px;
+border-top: none;
+padding: 8px;
+position: relative;
+}
+#menu66 ul li:hover {position: relative;
+background-color: #6CC;
+color: #000;
+border-radius: 8px;
+}
+#menu66 ul li a:hover, #menu66 ul li:hover a.nivel1 {background-color: #2360B2;
+color: #000;
+position: relative;
+}
+#menu66 ul li a.nivel1 {display: block!important;display: none;
+position: relative;
+}
+#menu66 ul li ul {display: none;
+}
+#menu66 ul li a:hover ul, #menu66 ul li:hover ul {display: block;
+position: absolute;left: 161px;top:-1px!important;top: -31px;
+}
+#menu66 ul li ul li a {width: 150px;
+background-color: #2360B2;
+color: #fff;
+}
+#menu66 ul li ul li a:hover {position: relative;
+background-color: #2360B2;
+color: #000;
+}
+table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}

@@ -1,0 +1,296 @@
+  /*@import url("reset.css");*/
+  /*body {
+	  margin-left: 0px;
+	  margin-top: 0px;
+	  margin-right: 0px;
+	  margin-bottom: 0px;
+	  
+  }*/
+ 
+  
+  input[type=submit], input[type=reset],input[type=button]{
+		  padding: 9px 17px;
+		  font-family: Helvetica,Arial,sans-serif;
+		  font-weight: bold;
+		  line-height: 1;
+		  color: #000000;
+		  border: none;
+		  text-shadow: 0 1px 1px rgba(255,255,255,0.85);
+		  background-color:#7FC1D7;
+		  border: 1px solid #ffffff;
+		  border-radius: 10px;
+		  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  
+  input[type=submit]:hover, input[type=reset]:hover,input[type=button]:hover{
+		  opacity:.60;
+		  cursor: pointer;
+		  color: #000000;
+  }
+  input[type=submit]:active, input[type=reset]:active,input[type=button]:active{
+		  border: 1px solid #222;
+		  box-shadow: 0 0 10px 5px #fffff inset;
+  }
+  /* ------------------------------------------------------------------------------------------ */
+  
+		  #tabint table{
+			  border-radius: 3px;
+                          
+			  border: solid 1px #f1f1f1;
+			  box-shadow: 5 5 10px #333;
+			  margin: 10px;
+		  }
+			  #tabint table a{
+				  color: #fff;
+			  }
+			  #tabint table thead tr th,
+			  #tabint table tfoot tr td{
+				  padding: 15px 0;
+				  background-color: #4B97FF;			
+				  color: #fff;
+				  font-weight: bold;
+				  font-size: 14px;
+				  text-align: center;
+				  min-width: 10px;
+			  }
+				  #tabint table tbody tr td,#tabint table tbody tr th{
+					  transition: all 400ms ease-in;
+						  -webkit-transition: all 400ms ease-in;
+						  -moz-transition: all 400ms ease-in;
+						  -o-transition: all 400ms ease-in;
+						  -ms-transition: all 400ms ease-in;
+					  padding: 5px 5px;
+					  word-wrap: break-word;
+					  border: solid 0px #fff;
+					  border-bottom: solid 1px #fff;
+					  border-top: solid 1px #f1f1f1;
+					  border-right: solid 1px #f1f1f1;
+				  }
+					  #tabint table tbody tr td:nth-child(odd){
+						  background-color: #fff;
+					  }
+					  #tabint table tbody tr td:nth-child(even){
+						  background-color: #fafafa;
+					  }
+						  #tabint table tbody tr:hover td:nth-child(odd),
+						  #tabint table tbody tr:hover td:nth-child(even){
+							  
+                                                      background: #EBF6FF;
+							  color: #000000;
+						  }
+						  
+						  #tabint table th{
+							  background: #4B97FF;
+							  color: #fff;
+						  }
+  
+  /* ------------------------------------------------------------------------------------------ */
+  
+  #contenedor { 
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin: 0 auto;
+	  width: 950px;
+	  box-shadow: 1.5px 4px 5px 0px #666; 
+  }
+  
+  
+  #index {
+     
+	  box-shadow: 1.5px 4px 5px 0px #666; 
+	  overflow:auto;
+	  width: 950px;
+	  top: 500px;
+	  background-color: #ffffff;
+          min-height: 600px;
+	 
+	  font-size: 12px;
+	  margin-left: auto;
+	  margin-right: auto;
+	  z-index:-2;
+  }
+  #menu {
+ position: absolute;
+		
+		z-index: 1;
+
+  }
+  
+  
+  
+  input[type=text], input[type=password],input[type=number], input[type=email], input[type=date], input[type=tel],   select{ 
+	  height:22px;
+	  border-radius: 4px;
+	  padding-left:5px;
+	  padding-right:5px;
+	  border:2px solid #7FC1D7;
+  }
+  
+  textarea{
+	border-radius: 4px;
+	  padding-left:5px;
+	  padding-right:5px;
+	  border:2px solid #7FC1D7;  
+  }
+  .encabezado{
+	  background-image:url(../image/banner.jpg);
+	 background-repeat: repeat-x;
+	  width:950px;
+	  height:132px;
+	  }
+  select { 
+	  height:26px;
+  }
+  
+  #encabe{
+	  width: 85%;
+	  height: 126px;
+	  float: left;
+	  
+  }
+  
+  #piec{
+	  width: 950px;
+	  height: 50px;
+	  float: center;
+	  box-shadow: 1.5px 4px 5px 0px #666; 
+  }
+  
+  #leftpanel{float:left; width:274px;}
+  
+  /*GRAY PANEL*/
+  .graypanel{
+	  border:solid 1px #666666; background-color:#F7F7F7; padding:10px; margin:10px;
+  }
+  
+  /*TEXT STYLES*/
+  .bodytext {
+	  font: 0.7em Tahoma, sans-serif;
+	  color: #666666;
+	  /*width: 70%;*/
+  }
+  
+  .style3 {font-size: 2em}
+  
+  .titletext {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size:24px;
+	  font-weight:bold;
+	  color:#000066;
+  }
+  
+  .titletext2 {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size:14px;
+	  font-weight:bold;
+	  color:#000066;
+  }
+  
+  .Texticot {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 15px;
+	  font-style: italic;
+	  font-weight: bold;
+	  color: #1179FF;
+  }
+  
+  .Texticop {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 9px;
+	  font-style: italic;
+	  font-weight: bold;
+	  color: #000000;
+  }
+  
+  .Texticot2 {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 20px;
+	  font-style: italic;
+	  font-weight: bold;
+	  color:#7FCDF3;
+  }
+  
+  .whitetitle {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size:36px;
+	  font-weight:bold;
+	  color:#FFFFFF;
+  }
+  .smalltitle {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size:20px;
+	  font-weight:bold;
+	  color:#CC0000;
+  }
+  .smallwhitetext {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color: #000066;
+  }
+  .smallwhitetext a{
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color: #000066;
+	  text-decoration:none;
+  }
+  .smallwhitetext a:hover{
+	  text-decoration:underline;
+	  color: #000000;
+  }
+  .smallgraytext {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color:#000066;
+  }
+  .smallgraytext a{
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color:#999999;
+	  text-decoration:none;
+  }
+  .smallgraytext a:hover{
+	  text-decoration:underline;
+  }
+  .smallredtext {
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color:#CC0000;
+  }
+  .smallredtext a{
+	  font: 0.7em Tahoma, sans-serif;
+	  font-size: 11px;
+	  font-weight:bold;
+	  color:#CC0000;
+	  text-decoration:none;
+  }
+  .smallredtext a:hover{
+	  text-decoration:underline;
+  }
+  footer {
+	  overflow: hidden;
+	  clear: both;
+	  background: rgba(255,255,255,1);
+ height: 100%;
+	  width: 100%;
+  }
+  
+  fieldset {
+	  width: 500px;
+	  box-shadow: 1.5px 4px 5px 0px #666; 	
+  }
+  .numeros{
+   width:125px;
+  }
+  #tiuloingreso {
+	  font-family: Arial, Helvetica, sans-serif;
+	  font-size: 30px;
+	  font-style: italic;
+	  font-weight: bold;
+	  color: #1179FF;
+  }
