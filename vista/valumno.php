@@ -60,14 +60,14 @@ include ("controlador/calumno.php");
             <tr>  
 
 
-                <td colspan="1" align="left"> <input type="text" placeholder="Primer Nombre" name="prinombre" size="35" maxlength="15" required="required" /></td>
-                <td colspan="1" align="left"> <input type="text" placeholder="Segundo Nombre  (No requerido)" name="segnombre" size="35" maxlength="20"  /></td>
+                <td colspan="1" align="left"> <input type="text" placeholder="Primer Nombre" name="prinombre" size="35" maxlength="15" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" required="required" /></td>
+                <td colspan="1" align="left"> <input type="text" placeholder="Segundo Nombre  (No requerido)" name="segnombre" size="35" maxlength="20" pattern="[A-Za-z]{1,20}" Title="Este campo solo admite letras"  /></td>
             </tr>
             <tr>  
 
 
-                <td colspan="1" align="left"> <input type="text" placeholder="Primer Apellido" name="priape" size="35" maxlength="15" required="required" /></td>
-                <td colspan="1" align="left"> <input type="text" placeholder="Segundo Apellido (No requerido)" name="segape" size="35" maxlength="20"  /></td>
+                <td colspan="1" align="left"> <input type="text" placeholder="Primer Apellido" name="priape" size="35" maxlength="15" required="required" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" /></td>
+                <td colspan="1" align="left"> <input type="text" placeholder="Segundo Apellido (No requerido)" name="segape" size="35" maxlength="20" pattern="[A-Za-z]{1,20}" Title="Este campo solo admite letras" /></td>
             </tr>
             <tr>  
 
