@@ -17,7 +17,7 @@ include("controlador/cparyval.php");
         </tr>
         
         <tr>
-            <td align="center">Parametro:
+            <td align="center">Par&aacute;metro:
             <?php if($edit){ ?>
                 <?php echo $edite[0]['parametro'] ?><input type="hidden" name="idval" value="<?php $edite[0]['idvalor']?>">
            <?php }else{ ?>
@@ -65,9 +65,9 @@ include("controlador/cparyval.php");
              <thead style="margin-top: 40px;">
             <tr>
                
-            <th>Codigo</th>
+                <th>C&oacute;digo</th>
             <th>Valor</th>
-            <th>Parametro</th> 
+            <th>Par&aacute;metro</th> 
             <th>Editar</th>
                        
             </tr>
@@ -103,7 +103,7 @@ include("controlador/cparyval.php");
    </tbody>
     <tr>
                     
-                    <td colspan="4">Para eliminar, presione el numero del codigo.</td>
+        <td colspan="4">Para eliminar, presione el n&uacute;mero del c&oacute;digo.</td>
                     
                 </tr>
           

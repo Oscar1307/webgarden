@@ -22,9 +22,9 @@ include ("controlador/cpersona.php");
 
                 <th>Foto</th>
                 <th>Nombre</th>
-                <th>Telefono</th>
-                <th>Direccion</th>
-                <th>Email</th> 
+                <th>Tel&eacute;fono</th>
+                <th>Direcci&oacute;n</th>
+                <th>E-mail</th> 
                 <th>Gestionar perfiles</th>
                 <th>Editar</th>
              

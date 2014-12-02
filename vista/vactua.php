@@ -50,7 +50,7 @@ for($a=0;$a<count($tipo);$a++){
 </tr>
 
 
-<tr><td align="center">Numero de documento:</td>
+<tr><td align="center">N&uacute;mero de documento:</td>
 <td><input type="hidden" name="codusu" value="<?php echo $peredit[0]['identificacion'] ?>"><?php echo $peredit[0]['identificacion'] ?></td></tr>
 
 
@@ -88,7 +88,7 @@ for($a=0;$a<count($tipo);$a++){
 
 <tr>
 
-<td align="center">Genero:</td>
+    <td align="center">G&eacute;nero:</td>
 <td>
 
 <select name = "genero">
@@ -129,7 +129,7 @@ if($peredit[0]['idvalor']==$gene[$b]['idvalor']) echo "SELECTED"; ?>  value="<?p
 
 <tr>
 
-<td align="center">Telefono:</td>
+    <td align="center">Tel&eacute;fono:</td>
 <td><input type="text" name="telef" required="required" value="<?php echo $peredit[0]['telefono'] ?>" maxlength="15" pattern="[0-9]{1,15}" title="Este campo solo admite n&uacute;meros" /></td>
 
 </tr>
@@ -137,7 +137,7 @@ if($peredit[0]['idvalor']==$gene[$b]['idvalor']) echo "SELECTED"; ?>  value="<?p
 
 
 
-<tr><td align="center">Direccion:</td>
+<tr><td align="center">Direcci&oacute;n:</td>
 <td><input type="text" name="direcc" required="required" value="<?php echo $peredit[0]['direccion'] ?>" maxlength="15"/></td></tr>
 <tr><td align="center">E-mail:</td>
 <td><input type="text" name="email" required="required" value="<?php echo $peredit[0]['email'] ?>" maxlength="100"/></td></tr>

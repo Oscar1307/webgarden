@@ -114,7 +114,7 @@ for($d=0; $d<count($selper);$d++){
 <br>
 
 <br>
-<form name ="form2" method = "GET" action = "" onSubmit="return confirm('�Desea eliminar el curso?')">
+<form name ="form2" method = "GET" action = "" onSubmit="return confirm('Desea eliminar el curso?')">
 
 <table border = "1" width = "700" align="center">
 <tr>
@@ -133,7 +133,7 @@ for($a=0;$a<count($sele);$a++){
 ?>
 <tr>
 
-<td align = "center"><input type = "submit" name = "elim" value = "<?php echo $sele[$a]["idcurso"]?>"  /></td>
+<td align = "center"><?php echo $sele[$a]["idcurso"]?></td>
 <td align = "center"><a href="home.php?edit=<?php echo $sele[$a]["idcurso"]?>&acceso=106"><img border = 0 src="image/editar.png"width = "20" height = "20" /></a></td>
 <td align = "center"><?php echo $sele[$a]["nombre"]?></td>
 <td align = "center"><?php  echo $sele[$a]["prinombre"]." ".$sele[$a]["priapellido"]?></td>
@@ -143,6 +143,13 @@ for($a=0;$a<count($sele);$a++){
 </tr>
 
 <?php } ?>
+
+
+<tr>
+    <td colspan="6">Para eliminar, presione el n&uacute;mero del c&oacute;digo.</td>
+</tr>
+
+
 
 </table>
 </form>
