@@ -1,4 +1,4 @@
-<<?php
+<?php
 include ("controlador/conexion.php");
 
 class mnove {

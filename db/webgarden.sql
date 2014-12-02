@@ -1,11 +1,11 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-12-2014 a las 23:39:15
--- Versión del servidor: 5.6.20
--- Versión de PHP: 5.5.15
+-- Tiempo de generaciÃ³n: 02-12-2014 a las 23:49:59
+-- VersiÃ³n del servidor: 5.6.20
+-- VersiÃ³n de PHP: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -35,7 +35,15 @@ CREATE TABLE IF NOT EXISTS `actividadex` (
   `tipo_acti` int(11) NOT NULL,
   `fecha1` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `perfilid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `actividadex`
+--
+
+INSERT INTO `actividadex` (`idactividadex`, `nombre`, `descripcion`, `idcurso`, `idpersona`, `tipo_acti`, `fecha1`, `perfilid`) VALUES
+(1, 'paseo a salitre magico', 'el dÃ­a 5 de diciembre se realizara un salida pedagÃ³gica a salitre mÃ¡gico  por favor enviar el formato firmado que sera enviado con los estudiantes con los 20000 de trasporte y alimentaciÃ³n \r\nentrada normal estudiantes de particular ', 1, 123, 47, '2014-12-02 22:25:11', 5),
+(2, 'evaluacion', 'se le informa a lo padres que el dÃ­a  02/12/14\r\nlos estudiantes  tienen evaluaciÃ³n de matemÃ¡ticas \r\npor favor estudiar los temas de la cartilla', 1, 1234, 59, '2014-12-02 22:42:40', 3);
 
 -- --------------------------------------------------------
 
@@ -127,11 +135,11 @@ CREATE TABLE IF NOT EXISTS `nivel` (
 --
 
 INSERT INTO `nivel` (`idnivel`, `nombre`, `descripcion`) VALUES
-(1, 'inicial', 'En este nivel se encuentran los niÃƒÂ±os cuyas edades oscilan entre  dos aÃƒÂ±os cumplidos que no han empezado su vida escolar o no tienen ningÃƒÂºn nivel aprobado'),
-(2, 'pre-inicial', 'En este nivel encontramos los niÃƒÂ±os cuyas edades estÃƒÂ¡n entre los 2 aÃƒÂ±os cumplidos al iniciar el aÃƒÂ±o escolar y los tres aÃƒÂ±os al finalizar el aÃƒÂ±o lectivo, en este nivel pretendemos que los niÃƒÂ±os y niÃƒÂ±as se socialicen y desarrollen todas sus potencialidades en las diferentes dimensiones, logrando estabilidad emocional, que permita a nuestros pequeÃƒÂ±os en un futuro desenvolverse en nuestra sociedad utilizando como eje central de todas las actividades la lÃƒÂºdica.'),
-(3, 'pre-jardin', 'En este nivel se encuentran los niÃƒÂ±os cuyas edades oscilan entre los 3 y los 4 aÃƒÂ±os, este nivel se caracteriza por que niÃƒÂ±os y niÃƒÂ±as inician su proceso para la educaciÃƒÂ³n Pre Escolar Formal, aquÃƒÂ­ se fortalecen procesos cognitivos y psicomotores que favorecen las experiencias significativas.         '),
-(4, 'jardin', 'En este nivel se encuentran los niÃƒÂ±os y niÃƒÂ±as cuyas edades oscilan entre los 4 y 5 aÃƒÂ±os de edad, en este nivel se ven reflejados los logros obtenidos en los grados anteriores, empiezan a jugar con letras y nÃƒÂºmeros allÃƒÂ¡ se desarrollan habilidades y destrezas propias de su edad, se enfrentan a retos competitivos a nivel cognitivo y socio cultural.'),
-(5, 'transicion', 'En este nivel se encuentran los niÃƒÂ±os cuyas edades oscilan entre los 5 y 6 aÃƒÂ±os de edad en este grado los niÃƒÂ±os aplican todos sus conocimientos de los aÃƒÂ±os anteriores, es aquÃƒÂ­ donde ellos realizan ejercicios de comprensiÃƒÂ³n de lectura, sus trazos ya son claros y definidos, realizan operaciones lÃƒÂ³gico matemÃƒÂ¡ticas, se ven los resultados de niÃƒÂ±os y niÃƒÂ±as seguros e independientes con lo cual logran ser personitas integras y felices que pueden enfrentar su nueva vida escolar sin dificultada.');
+(1, 'inicial', ' En este nivel se encuentran los ni&#241;os cuyas edades oscilan entre  dos a&#241;os cumplidos que no han empezado su vida escolar o no tienen ningun nivel aprobado'),
+(2, 'pre-inicial', 'En este nivel encontramos los niÃƒÆ’Ã‚Â±os cuyas edades estÃƒÆ’Ã‚Â¡n entre los 2 aÃƒÆ’Ã‚Â±os cumplidos al iniciar el aÃƒÆ’Ã‚Â±o escolar y los tres aÃƒÆ’Ã‚Â±os al finalizar el aÃƒÆ’Ã‚Â±o lectivo, en este nivel pretendemos que los niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as se socialicen y desarrollen todas sus potencialidades en las diferentes dimensiones, logrando estabilidad emocional, que permita a nuestros pequeÃƒÆ’Ã‚Â±os en un futuro desenvolverse en nuestra sociedad utilizando como eje central de todas las actividades la lÃƒÆ’Ã‚Âºdica.'),
+(3, 'pre-jardin', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os cuyas edades oscilan entre los 3 y los 4 aÃƒÆ’Ã‚Â±os, este nivel se caracteriza por que niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as inician su proceso para la educaciÃƒÆ’Ã‚Â³n Pre Escolar Formal, aquÃƒÆ’Ã‚Â­ se fortalecen procesos cognitivos y psicomotores que favorecen las experiencias significativas.         '),
+(4, 'jardin', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as cuyas edades oscilan entre los 4 y 5 aÃƒÆ’Ã‚Â±os de edad, en este nivel se ven reflejados los logros obtenidos en los grados anteriores, empiezan a jugar con letras y nÃƒÆ’Ã‚Âºmeros allÃƒÆ’Ã‚Â¡ se desarrollan habilidades y destrezas propias de su edad, se enfrentan a retos competitivos a nivel cognitivo y socio cultural.'),
+(5, 'transicion', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os cuyas edades oscilan entre los 5 y 6 aÃƒÆ’Ã‚Â±os de edad en este grado los niÃƒÆ’Ã‚Â±os aplican todos sus conocimientos de los aÃƒÆ’Ã‚Â±os anteriores, es aquÃƒÆ’Ã‚Â­ donde ellos realizan ejercicios de comprensiÃƒÆ’Ã‚Â³n de lectura, sus trazos ya son claros y definidos, realizan operaciones lÃƒÆ’Ã‚Â³gico matemÃƒÆ’Ã‚Â¡ticas, se ven los resultados de niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as seguros e independientes con lo cual logran ser personitas integras y felices que pueden enfrentar su nueva vida escolar sin dificultada.');
 
 -- --------------------------------------------------------
 
@@ -148,7 +156,15 @@ CREATE TABLE IF NOT EXISTS `novedad` (
   `tiponov` int(11) NOT NULL,
   `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `perfilid` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `novedad`
+--
+
+INSERT INTO `novedad` (`idnovedad`, `titulo`, `descripcion`, `iddocente`, `idalumno`, `tiponov`, `fecha`, `perfilid`) VALUES
+(1, 'mala conducta', 'el alumno ha venido presentando mal comportamiento durante el mes\r\nse cita al padre de familia para el dÃ­a 4/12/14 a las 7 am para definir matricula condicional ', 123, 45678923, 42, '2014-12-02 22:30:54', 5),
+(2, 'horario', 'por favor enviar el horario correspondiente del dÃ­a \r\n el estudiante trae los materiales de otros dÃ­as\r\n', 1234, 45678923, 57, '2014-12-02 22:46:18', 3);
 
 -- --------------------------------------------------------
 
@@ -295,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `valor` (
 `idvalor` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `idparametro` int(11) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=59 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;
 
 --
 -- Volcado de datos para la tabla `valor`
@@ -324,10 +340,11 @@ INSERT INTO `valor` (`idvalor`, `nombre`, `idparametro`) VALUES
 (51, 'entrega informes academicos', 7),
 (55, 'Masculino', 1),
 (57, 'Llamado de atencion', 6),
-(58, 'Registro civil', 3);
+(58, 'Registro civil', 3),
+(59, 'evaluacion', 7);
 
 --
--- Índices para tablas volcadas
+-- Ãndices para tablas volcadas
 --
 
 --
@@ -410,7 +427,7 @@ ALTER TABLE `valor`
 -- AUTO_INCREMENT de la tabla `actividadex`
 --
 ALTER TABLE `actividadex`
-MODIFY `idactividadex` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `idactividadex` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `curso`
 --
@@ -430,7 +447,7 @@ MODIFY `idnivel` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 -- AUTO_INCREMENT de la tabla `novedad`
 --
 ALTER TABLE `novedad`
-MODIFY `idnovedad` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `idnovedad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `parametro`
 --
@@ -455,7 +472,7 @@ MODIFY `idruta` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 -- AUTO_INCREMENT de la tabla `valor`
 --
 ALTER TABLE `valor`
-MODIFY `idvalor` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=59;
+MODIFY `idvalor` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 --
 -- Restricciones para tablas volcadas
 --
