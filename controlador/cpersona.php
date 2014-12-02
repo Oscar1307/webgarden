@@ -170,7 +170,8 @@ $codi = isset($_POST["codi"]) ? $_POST["codi"] : NULL;
 
 
 
-if ($tipdocu && $nomdocu && $prinomb && $segnomb && $priapellido && $segapellido && $genero && $direcc && $telef && $email && $pass && !$actua) {
+
+if ($tipdocu && $nomdocu && $prinomb && $priapellido && $genero && $direcc && $telef && $email && $pass && !$actua) {
     //print_r($_FILE);
     ?>
     <script>
@@ -183,7 +184,7 @@ if ($tipdocu && $nomdocu && $prinomb && $segnomb && $priapellido && $segapellido
     <?php
 
     if (empty($_FILES['files']['name']) && empty($_FILES['files']['tmp_name'])) {
-        echo "Esto sucede porque files no es nulo";
+        //echo "Esto sucede porque files no es nulo";
         $rutaDestino = 'image/perfil.png';
 
 
@@ -216,7 +217,7 @@ if ($tipdocu && $nomdocu && $prinomb && $segnomb && $priapellido && $segapellido
 /* Codigo para actualizar toda persona */
 
 
-if ($tipdocu && $prinomb && $segnomb && $priapellido && $segapellido && $genero && $direcc && $telef && $email && $actua && $codi) {
+if ($tipdocu && $prinomb && $priapellido && $genero && $direcc && $telef && $email && $actua && $codi) {
     //print_r($_FILE);
     ?>
     <script>

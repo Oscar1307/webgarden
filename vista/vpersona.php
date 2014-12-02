@@ -89,7 +89,7 @@ for ($a = 0; $a < count($tipo); $a++) {
                         <?php } ?>
                 </select>
             </td>
-            <td align="center"><?php if ($pr){ echo "No. documento: ".$peredit[0]['identificacion']; } ?><?php if(!$pr){ ?><input type="text" name="nomdocu" required="required"  placeholder="No. Documento" maxlength="11" pattern="[0-9]{1,11}" title="Este campo solo admite n&uacute;meros"><?php } ?></td>
+            <td align="center"><?php if ($pr){ echo "No. documento: ".$peredit[0]['identificacion']; } ?><?php if(!$pr){ ?><input type="text" name="nomdocu" required="required"  placeholder="No. Documento" maxlength="11" pattern="[0-9]{1,11}" title="Este campo solo admite n&uacute;meros" size="30" /><?php } ?></td>
             
         
         </tr>
@@ -97,24 +97,24 @@ for ($a = 0; $a < count($tipo); $a++) {
         <tr>
             
             
-            <td align="center"><input type="text" name="prinomb" required="required" value="<?php if ($pr) echo $peredit[0]['prinombre'] ?>" placeholder="Primer nombre" maxlength="15"></td>
-            <td align="center"><input type="text" name="segnomb" value="<?php if ($pr) echo $peredit[0]['segnombre'] ?>" placeholder="Segundo nombre" maxlength="20"/></td>
+            <td align="center"><input type="text" name="prinomb" required="required" value="<?php if ($pr) echo $peredit[0]['prinombre'] ?>" placeholder="Primer nombre" maxlength="15" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" size="30"/></td>
+            <td align="center"><input type="text" name="segnomb" value="<?php if ($pr) echo $peredit[0]['segnombre'] ?>" placeholder="Segundo nombre (No obligatorio)" maxlength="20" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" size="30"/></td>
         </tr>
 
         <tr>
             
-            <td align="center"><input type="text" name="priapellido" required="required" value="<?php if ($pr) echo $peredit[0]['priapellido'] ?>" placeholder="Primer apellido" maxlength="15"/></td>
+            <td align="center"><input type="text" name="priapellido" required="required" value="<?php if ($pr) echo $peredit[0]['priapellido'] ?>" placeholder="Primer apellido" maxlength="15" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" size="30"/></td>
 
-            <td align="center"><input type="text" name="segapellido" value="<?php if ($pr) echo $peredit[0]['segapellido'] ?>" placeholder="Segundo apellido" maxlength="20"/></td>
+            <td align="center"><input type="text" name="segapellido" value="<?php if ($pr) echo $peredit[0]['segapellido'] ?>" placeholder="Segundo apellido (No obligatorio)" maxlength="20" pattern="[A-Za-z]{1,15}" Title="Este campo solo admite letras" size="30"/></td>
             
         </tr>
 
         <tr>
 
             
-            <td align="center">Genero:
+            <td align="center">G&eacute;nero:
 
-                <select name = "genero">
+                <select name = "genero"  >
 <?php
 for ($b = 0; $b < count($gene); $b++) {
     ?>
@@ -124,7 +124,7 @@ for ($b = 0; $b < count($gene); $b++) {
                         <option  <?php if ($pr)
                         if ($peredit[0]['idvalor'] == $gene[$b]['idvalor'])
                             echo "SELECTED"; 
-    ?>  value="<?php echo $gene[$b]['idvalor'] ?>">
+    ?>  value="<?php echo $gene[$b]['idvalor'] ?>" >
     <?php echo $gene[$b]['nombre']; ?>
                         </option>
 
@@ -145,15 +145,15 @@ for ($b = 0; $b < count($gene); $b++) {
 
 
 
-            <td align="center"><input type="text" name="direcc" required="required" value="<?php if ($pr) echo $peredit[0]['direccion'] ?>" placeholder="Direccion" maxlength="15"/></td>
+            <td align="center"><input type="text" name="direcc" required="required" value="<?php if ($pr) echo $peredit[0]['direccion'] ?>" placeholder="Direccion" maxlength="15" size="30"/></td>
             
         </tr>
 
         <tr>
 
             
-            <td align="center"><input type="text" name="telef" required="required" value="<?php if ($pr) echo $peredit[0]['telefono'] ?>" placeholder="Telefono" maxlength="15" pattern="[0-9]{1,15}" title="Este campo solo admite n&uacute;meros"  /></td>
-		<td align="center"><input type="text" name="email" required="required" value="<?php if ($pr) echo $peredit[0]['email'] ?>" placeholder="E-mail" maxlength="100"/></td>
+            <td align="center"><input type="text" name="telef" required="required" value="<?php if ($pr) echo $peredit[0]['telefono'] ?>" placeholder="Telefono" maxlength="15" pattern="[0-9]{1,15}" title="Este campo solo admite n&uacute;meros" size="30" /></td>
+		<td align="center"><input type="email" name="email" required="required" value="<?php if ($pr) echo $peredit[0]['email'] ?>" placeholder="E-mail" maxlength="100" size="30"/></td>
             
         </tr>
 
