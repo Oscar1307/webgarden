@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generaciÃ³n: 02-12-2014 a las 23:49:59
+-- Tiempo de generaciÃ³n: 03-12-2014 a las 04:18:10
 -- VersiÃ³n del servidor: 5.6.20
 -- VersiÃ³n de PHP: 5.5.15
 
@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `actividadex` (
 --
 
 INSERT INTO `actividadex` (`idactividadex`, `nombre`, `descripcion`, `idcurso`, `idpersona`, `tipo_acti`, `fecha1`, `perfilid`) VALUES
-(1, 'paseo a salitre magico', 'el dÃ­a 5 de diciembre se realizara un salida pedagÃ³gica a salitre mÃ¡gico  por favor enviar el formato firmado que sera enviado con los estudiantes con los 20000 de trasporte y alimentaciÃ³n \r\nentrada normal estudiantes de particular ', 1, 123, 47, '2014-12-02 22:25:11', 5),
-(2, 'evaluacion', 'se le informa a lo padres que el dÃ­a  02/12/14\r\nlos estudiantes  tienen evaluaciÃ³n de matemÃ¡ticas \r\npor favor estudiar los temas de la cartilla', 1, 1234, 59, '2014-12-02 22:42:40', 3);
+(1, 'paseo a salitre magico', 'el dÃƒÂ­a 5 de diciembre se realizara un salida pedagÃƒÂ³gica a salitre mÃƒÂ¡gico  por favor enviar el formato firmado que sera enviado con los estudiantes con los 20000 de trasporte y alimentaciÃƒÂ³n \r\nentrada normal estudiantes de particular ', 1, 123, 47, '2014-12-02 22:25:11', 5),
+(2, 'evaluacion', 'se le informa a lo padres que el dÃƒÂ­a  02/12/14los estudiantes  tienen evaluaciÃƒÂ³n de matemÃƒÂ¡ticas por favor estudiar los temas de la cartilla', 1, 1234, 59, '2014-12-02 22:42:40', 3);
 
 -- --------------------------------------------------------
 
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `alumno` (
 --
 
 INSERT INTO `alumno` (`identificacion`, `prinombre`, `segnombre`, `priapellido`, `segapellido`, `direccion`, `desenf`, `retri`, `idruta`, `acudiente`, `foto`, `genero`, `idcurso`, `rh`, `tipodoc`, `fecha_naci`, `gruposan`) VALUES
-(45678923, 'david', 'santiago', 'gordillo', 'vizcaino', 'calle 17 N32-55', 'ninguna', 'ninguna', 2, 99999, 'image/45678923foto3.jpg', 55, 1, 4, 58, '2012-06-12', 7);
+(45678923, 'Sergio', 'andres', 'Rodriguez', 'Ortiz', 'calle 17 N32-55', 'ninguna', 'ninguna', 2, 99999, 'image/45678923foto3.jpg', 55, 1, 4, 58, '2007-12-26', 7);
 
 -- --------------------------------------------------------
 
@@ -136,10 +136,10 @@ CREATE TABLE IF NOT EXISTS `nivel` (
 
 INSERT INTO `nivel` (`idnivel`, `nombre`, `descripcion`) VALUES
 (1, 'inicial', ' En este nivel se encuentran los ni&#241;os cuyas edades oscilan entre  dos a&#241;os cumplidos que no han empezado su vida escolar o no tienen ningun nivel aprobado'),
-(2, 'pre-inicial', 'En este nivel encontramos los niÃƒÆ’Ã‚Â±os cuyas edades estÃƒÆ’Ã‚Â¡n entre los 2 aÃƒÆ’Ã‚Â±os cumplidos al iniciar el aÃƒÆ’Ã‚Â±o escolar y los tres aÃƒÆ’Ã‚Â±os al finalizar el aÃƒÆ’Ã‚Â±o lectivo, en este nivel pretendemos que los niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as se socialicen y desarrollen todas sus potencialidades en las diferentes dimensiones, logrando estabilidad emocional, que permita a nuestros pequeÃƒÆ’Ã‚Â±os en un futuro desenvolverse en nuestra sociedad utilizando como eje central de todas las actividades la lÃƒÆ’Ã‚Âºdica.'),
-(3, 'pre-jardin', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os cuyas edades oscilan entre los 3 y los 4 aÃƒÆ’Ã‚Â±os, este nivel se caracteriza por que niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as inician su proceso para la educaciÃƒÆ’Ã‚Â³n Pre Escolar Formal, aquÃƒÆ’Ã‚Â­ se fortalecen procesos cognitivos y psicomotores que favorecen las experiencias significativas.         '),
-(4, 'jardin', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as cuyas edades oscilan entre los 4 y 5 aÃƒÆ’Ã‚Â±os de edad, en este nivel se ven reflejados los logros obtenidos en los grados anteriores, empiezan a jugar con letras y nÃƒÆ’Ã‚Âºmeros allÃƒÆ’Ã‚Â¡ se desarrollan habilidades y destrezas propias de su edad, se enfrentan a retos competitivos a nivel cognitivo y socio cultural.'),
-(5, 'transicion', 'En este nivel se encuentran los niÃƒÆ’Ã‚Â±os cuyas edades oscilan entre los 5 y 6 aÃƒÆ’Ã‚Â±os de edad en este grado los niÃƒÆ’Ã‚Â±os aplican todos sus conocimientos de los aÃƒÆ’Ã‚Â±os anteriores, es aquÃƒÆ’Ã‚Â­ donde ellos realizan ejercicios de comprensiÃƒÆ’Ã‚Â³n de lectura, sus trazos ya son claros y definidos, realizan operaciones lÃƒÆ’Ã‚Â³gico matemÃƒÆ’Ã‚Â¡ticas, se ven los resultados de niÃƒÆ’Ã‚Â±os y niÃƒÆ’Ã‚Â±as seguros e independientes con lo cual logran ser personitas integras y felices que pueden enfrentar su nueva vida escolar sin dificultada.');
+(2, 'pre-inicial', 'En este nivel encontramos los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os cuyas edades estÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡n entre los 2 aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os cumplidos al iniciar el aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o escolar y los tres aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os al finalizar el aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o lectivo, en este nivel pretendemos que los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os y niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±as se socialicen y desarrollen todas sus potencialidades en las diferentes dimensiones, logrando estabilidad emocional, que permita a nuestros pequeÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os en un futuro desenvolverse en nuestra sociedad utilizando como eje central de todas las actividades la lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºdica.'),
+(3, 'pre-jardin', 'En este nivel se encuentran los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os cuyas edades oscilan entre los 3 y los 4 aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os, este nivel se caracteriza por que niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os y niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±as inician su proceso para la educaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Pre Escolar Formal, aquÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ se fortalecen procesos cognitivos y psicomotores que favorecen las experiencias significativas.         '),
+(4, 'jardin', 'En este nivel se encuentran los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os y niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±as cuyas edades oscilan entre los 4 y 5 aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os de edad, en este nivel se ven reflejados los logros obtenidos en los grados anteriores, empiezan a jugar con letras y nÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºmeros allÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ se desarrollan habilidades y destrezas propias de su edad, se enfrentan a retos competitivos a nivel cognitivo y socio cultural.'),
+(5, 'transicion', 'En este nivel se encuentran los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os cuyas edades oscilan entre los 5 y 6 aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os de edad en este grado los niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os aplican todos sus conocimientos de los aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os anteriores, es aquÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ donde ellos realizan ejercicios de comprensiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n de lectura, sus trazos ya son claros y definidos, realizan operaciones lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³gico matemÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ticas, se ven los resultados de niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os y niÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±as seguros e independientes con lo cual logran ser personitas integras y felices que pueden enfrentar su nueva vida escolar sin dificultada.');
 
 -- --------------------------------------------------------
 
@@ -163,8 +163,8 @@ CREATE TABLE IF NOT EXISTS `novedad` (
 --
 
 INSERT INTO `novedad` (`idnovedad`, `titulo`, `descripcion`, `iddocente`, `idalumno`, `tiponov`, `fecha`, `perfilid`) VALUES
-(1, 'mala conducta', 'el alumno ha venido presentando mal comportamiento durante el mes\r\nse cita al padre de familia para el dÃ­a 4/12/14 a las 7 am para definir matricula condicional ', 123, 45678923, 42, '2014-12-02 22:30:54', 5),
-(2, 'horario', 'por favor enviar el horario correspondiente del dÃ­a \r\n el estudiante trae los materiales de otros dÃ­as\r\n', 1234, 45678923, 57, '2014-12-02 22:46:18', 3);
+(1, 'mala conducta', 'el alumno ha venido presentando mal comportamiento durante el mes\r\nse cita al padre de familia para el dÃƒÂ­a 4/12/14 a las 7 am para definir matricula condicional ', 123, 45678923, 42, '2014-12-02 22:30:54', 5),
+(2, 'horario', 'por favor enviar el horario correspondiente del dÃƒÂ­a \r\n el estudiante trae los materiales de otros dÃƒÂ­as\r\n', 1234, 45678923, 57, '2014-12-02 22:46:18', 3);
 
 -- --------------------------------------------------------
 
@@ -206,10 +206,10 @@ CREATE TABLE IF NOT EXISTS `perfil` (
 --
 
 INSERT INTO `perfil` (`idperfil`, `nombre`) VALUES
-(1, 'acudiente'),
-(3, 'profesor'),
-(4, 'conductor'),
-(5, 'administrador');
+(1, 'Acudiente'),
+(3, 'Profesor'),
+(4, 'Conductor'),
+(5, 'Administrador');
 
 -- --------------------------------------------------------
 
@@ -238,10 +238,10 @@ CREATE TABLE IF NOT EXISTS `persona` (
 
 INSERT INTO `persona` (`identificacion`, `prinombre`, `segnombre`, `priapellido`, `segapellido`, `telefono`, `direccion`, `foto`, `pass`, `genero`, `email`, `tipodoc`) VALUES
 (1, 'N/A', 'nunguno', '', 'ninguno', '1111', '11111', '1111', 'erfvedc', 55, '11', 11),
-(123, 'admin', 'admin', 'admin', 'admin', '54654', 'calle 14', 'image/123descarga.jpg', '123', 55, 'admin@gmail.com', 24),
-(1234, 'carlos', 'andres', 'vargas', 'pinzon', '43242', 'calle 14 ', 'image/1234foto1.jpg', '1234', 55, 'voos16@gmail.com', 25),
-(99999, 'Andrea', 'Carolina', 'Ortiz', 'Ortiz', 'telef', 'calle', 'image/99999foto2.jpg', '99999', 2, 'fulanitop@mail.com', 24),
-(789456, 'juan', 'carlos', 'perez', 'segundo', '123456', 'calle 15', 'image/perfil.png', '789456', 55, 'choloparise.u.s@hotmail.com', 24);
+(123, 'admin', 'admin', 'admin', 'admin', '54654', 'calle 1 #34-78 ', 'image/123descarga.jpg', '123', 55, 'admin@gmail.com', 24),
+(1234, 'carlos', 'andres', 'vargas', 'pinzon', '43242', 'calle 14 #32-39', 'image/1234foto1.jpg', '1234', 55, 'carlos16@gmail.com', 25),
+(99999, 'Andrea', 'Carolina', 'Ortiz', 'Ortiz', 'telef', 'diagonal 25', 'image/99999foto2.jpg', '99999', 2, 'andrea23@gmail.com', 24),
+(789456, 'juan', 'carlos', 'perez', 'camargo', '123456', 'calle 15 #78', 'image/perfil.png', '789456', 55, '34carlos@hotmail.com', 24);
 
 -- --------------------------------------------------------
 
